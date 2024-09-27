@@ -5,50 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Azizi Firm - Email Signature</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .signature-table {
+            width: 400px;
+            height: auto;
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .signature-table tr,
+        .signature-table td {
+            height: 100%;
+        }
+        .logo-cell {
+            padding: 20px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .logo-img {
+            width: 150px;
+            height: auto;
+        }
+
+        .divider-cell {
+            vertical-align: top;
+            width: 1px;
+            background-color: black;
+            margin: 0 10px;
+        }
+
+        .info-cell {
+            padding-left: 20px;
+        }
+
+        .name {
+            font-size: 23px;
+            margin: 0;
+        }
+
+        .title {
+            color: #cdb083;
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-item {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            padding: 2px 0;
+        }
+
+        .icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <table style="width: 530px; font-family: Arial, sans-serif; border-collapse: collapse;">
+    <table class="signature-table">
         <tr>
-            <td style="padding: 20px; vertical-align: middle; text-align: center;">
+            <td class="logo-cell">
                 <a href="https://theazizifirm.com/" target="_blank">
-                    <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/The_Azizi_Firm_pqj5f4.png" alt="The Azizi Firm Logo" width="200"
-                        style="width: 200px; height: auto;">
+                    <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/The_Azizi_Firm_pqj5f4.png"
+                        alt="The Azizi Firm Logo" class="logo-img">
                 </a>
             </td>
-            <td style="vertical-align: top; width: 1px; background-color: black; margin: 0px 10px;"></td>
-            <td style="padding: 20px;">
-                <h1 style="font-size: 26px; margin: 0;">Amer Azizi, Esq</h1>
-                <h3
-                    style="color: #cdb083; font-style: italic; font-size: 18px; font-weight: 500; margin: 0; padding-bottom: 10px;">
-                    Attorney at Law</h3>
-                <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style=" font-size: 15px; display: flex; align-items: center; padding: 4px 0px;">
-                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/phone-icon_mg1yrl.png" alt="phone-icon"
-                            style="width: 25px; height: 25px; margin-right: 10px;">
-                        <a href="tel:+18588293962" target="_blank" style="text-decoration: none; color: black;">+1
-                            858-829-3962</a>
+            <td class="divider-cell"></td>
+            <td class="info-cell">
+                <h1 class="name">Amer Azizi, Esq</h1>
+                <h3 class="title">Attorney at Law</h3>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/phone-icon_mg1yrl.png"
+                            alt="phone-icon" class="icon">
+                        <a href="tel:+18588293962" target="_blank" class="contact-link">+1 858-829-3962</a>
                     </li>
-                    <li style=" font-size: 15px; display: flex; align-items: center; padding: 4px 0px;">
-                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/mail-icon_nhhvsx.png" alt="mail-icon"
-                            style="width: 25px; height: 25px; margin-right: 10px;">
+                    <li class="contact-item">
+                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/mail-icon_nhhvsx.png"
+                            alt="mail-icon" class="icon">
                         <a href="mailto:aa@theazizifirm.com" target="_blank"
-                            style="text-decoration: none; color: black;">aa@theazizifirm.com</a>
+                            class="contact-link">aa@theazizifirm.com</a>
                     </li>
-                    <li style=" font-size: 15px; display: flex; align-items: center; padding: 4px 0px;">
-                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/location-icon_wdf2cq.png" alt="location-icon"
-                            style="width: 25px; height: 25px;  display: flex; justify-content: center; align-items: center; margin: auto;  margin-right: 10px;">
+                    <li class="contact-item">
+                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/location-icon_wdf2cq.png"
+                            alt="location-icon" class="icon">
                         <a href="https://www.google.com/maps?q=401+West+A+Street,+Suite+1150+San+Diego,+CA+92101"
-                            target="_blank" style="text-decoration: none; color: black;">
+                            target="_blank" class="contact-link">
                             <span>401 West A Street, </span><span>Suit 1150 </span><span>San Diego, </span> <span>CA
                                 92101</span>
                         </a>
                     </li>
-                    <li style=" font-size: 15px; display: flex; align-items: center; padding: 4px 0px;">
-                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/global-icon_abb6nz.png" alt="global-icon"
-                            style="width: 25px; height: 25px; margin-right: 10px;">
-                        <a href="https://theazizifirm.com/" target="_blank"
-                            style="text-decoration: none; color: black;">theazizifirm.com</a>
+                    <li class="contact-item">
+                        <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/global-icon_abb6nz.png"
+                            alt="global-icon" class="icon">
+                        <a href="https://theazizifirm.com/" target="_blank" class="contact-link">theazizifirm.com</a>
                     </li>
                 </ul>
             </td>
