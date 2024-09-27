@@ -71,6 +71,27 @@
             margin-left: 10px;
         }
     </style>
+    <script>
+        function obfuscateEmail() {
+            var user = "aa";
+            var domain = "theazizifirm.com";
+            var emailLink = document.getElementById("email-link");
+            emailLink.href = "mailto:" + user + "@" + domain;
+            emailLink.innerText = user + "@" + domain;
+        }
+
+        function obfuscatePhone() {
+            var phone = "+1 858-829-3962";
+            var phoneLink = document.getElementById("phone-link");
+            phoneLink.href = "tel:" + phone;
+            phoneLink.innerText = phone;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            obfuscateEmail();
+            obfuscatePhone();
+        });
+    </script>
 </head>
 
 <body>
@@ -90,13 +111,12 @@
                     <li class="contact-item">
                         <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/phone-icon_mg1yrl.png"
                             alt="Phone icon" class="icon">
-                        <a href="tel:+18588293962" target="_blank" class="contact-link">+1 858-829-3962</a>
+                        <a id="phone-link" target="_blank" class="contact-link"></a>
                     </li>
                     <li class="contact-item">
                         <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/mail-icon_nhhvsx.png"
                             alt="Mail icon" class="icon">
-                        <a href="mailto:aa@theazizifirm.com" target="_blank"
-                            class="contact-link">aa@theazizifirm.com</a>
+                        <a id="email-link" target="_blank" class="contact-link"></a>
                     </li>
                     <li class="contact-item">
                         <img src="https://res.cloudinary.com/daezn4lpp/image/upload/v1727347138/location-icon_wdf2cq.png"
